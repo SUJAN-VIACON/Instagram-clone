@@ -6,6 +6,7 @@ import HomeScreen from './Screens/HomeScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import SearchScreen from './Screens/SearchScreen';
 import BottomTabScreen from './Screens/BottomTabScreen';
+import SinglePostScreen from './Screens/SinglePostScreen';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="SearchScreen" component={SearchScreen} />
         <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+        <Stack.Screen name="SinglePostScreen" component={SinglePostScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

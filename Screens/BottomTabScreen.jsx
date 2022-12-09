@@ -5,6 +5,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ProfileScreen from './ProfileScreen';
 import SearchScreen from './SearchScreen';
 import HomeScreen from './HomeScreen';
+import SinglePostScreen from './SinglePostScreen';
+import BlankScreen from './BlankScreen';
+import BlankScreen2 from './BlankScreen2';
 
 
 export default function BottomTabScreen() {
@@ -32,12 +35,15 @@ export default function BottomTabScreen() {
                         iconName = focused ? 'ios-person-circle' : 'ios-person-outline';
                     }
 
-                    return <Ionic name={iconName} size={size} color={color} />;
+                    return <Ionic name={iconName} size={size} color="black" />;
                 },
             })}>
             <Tab.Screen name="HomeScreen" component={HomeScreen} />
+            <Tab.Screen name="BlankScreen" component={BlankScreen} />
             <Tab.Screen name="SearchScreen" component={SearchScreen} />
+            <Tab.Screen name="BlankScreen2" component={BlankScreen2} />
             <Tab.Screen name="ProfileScreen" component={ProfileScreen} />
+           
         </Tab.Navigator>
     )
 }
