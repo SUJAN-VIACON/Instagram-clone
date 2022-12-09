@@ -4,7 +4,7 @@ import React from 'react'
 export default function BlankScreen() {
   return (
     <View>
-      <Text>BlankScreen</Text>
+      <Text></Text>
     </View>
   )
 }
